@@ -21,6 +21,9 @@
 	</script>
 
   <link href='animate.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <style>
     html {
@@ -503,6 +506,11 @@
 
 </head>
 <body>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
   <div class="wrapper">
 	  <div class="main">
 	    
@@ -555,12 +563,12 @@
   	      </div>-->
   	    </div>
   	    
-		<div id="events">
-			<div class="circle wow" style="background-image:url('seniorquiz.png'); position:absolute; left:100px; top: 100px;"data-wow-delay="1s">
+		<div id="events wow bounceIn" data-wow-delay="2s">
+			<a class="various fancybox" rel="group" href="sq.png"><div class="circle wow" style="background-image:url('seniorquiz.png'); position:absolute; left:100px; top: 100px;" data-wow-delay="1s">
 		        <div class="hovercnt" style="background:rgba(0, 0, 0, 0.3)">
 		        <br><br>Senior Quiz<br> 
 		        </div>
-		        </div>
+		        </div></a>
             <div class="circle" style="background-image:url('seniorquiz.png'); position:absolute; left:300px; top: 100px;">
 		        <div class="hovercnt" style="background:rgba(0, 0, 0, 0.3)">
 		        <br><br>Junior Quiz<br> 
@@ -639,11 +647,11 @@
         <br><br>President <br> Divyanshu Nandwani
         </div>
         </div>
-        <div class="circle" style="background-image:url('generic-person.png'); position:relative; right:-400px; top: 100px;">
+        <a class="fancybox" rel="group" href="generic-person.png"><div class="circle" style="background-image:url('generic-person.png'); position:relative; right:-400px; top: 100px;">
         <div class="hovercnt" style="background:rgba(0, 0, 0, 0.3)">
         <br><br>Vice President and COO <br> Saarthak Sachdeva
         </div>
-        </div>
+        </div></a>
         <div class="circle" style="background-image:url('generic-person.png'); position:relative; right:-200px; top: 100px;">
         <div class="hovercnt" style="background:rgba(0, 0, 0, 0.3)">
         <br><br>(I don't know) <br> Parteek Singhal
