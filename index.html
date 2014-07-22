@@ -15,6 +15,12 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
   <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <script src="js/wow.min.js"></script>
+	<script>
+ 		new WOW().init();
+	</script>
+
+  <link href='animate.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <style>
     html {
@@ -501,8 +507,8 @@
 	  <div class="main">
 	    
       <section class="page1">
-        <div class="page_container">
-          <img src = "reactor.png"/>
+        <div class="page_container wow bounceIn">
+          <img src = "reactor.png" id="logoss"/>
           <h1>The Digilogous</h1>
           <h2>Rukmini Devi Public School, Pitampura</h2>
           <!--<p class="credit">Created by <a href="http://www.thepetedesign.com">Pete R.</a>, Founder of <a href="http://www.bucketlistly.com" target="_blank">BucketListly</a></p> -->
@@ -550,7 +556,7 @@
   	    </div>
   	    
 		<div id="events">
-			<div class="circle" style="background-image:url('seniorquiz.png'); position:absolute; left:100px; top: 100px;">
+			<div class="circle wow" style="background-image:url('seniorquiz.png'); position:absolute; left:100px; top: 100px;"data-wow-delay="1s">
 		        <div class="hovercnt" style="background:rgba(0, 0, 0, 0.3)">
 		        <br><br>Senior Quiz<br> 
 		        </div>
@@ -621,7 +627,7 @@
         <!--Insert Google Maps on the Right -->
       </section>
       <section class="page5">
-        <div class="page_container">
+        <div class="page_container wow bounceIn" data-wow-delay="5s">
           <h1>The Team</h1>
           <h2>Or maybe the Illuminati?</h2>
           <!--<div class="btns">
