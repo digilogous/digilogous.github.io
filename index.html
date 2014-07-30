@@ -23,6 +23,12 @@
   <link href='animate.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+		var ipad = true;               // Set to false to not redirect on iPad.
+		var other_tablets = true;  // Set to false to not redirect on other tablets.
+		var mobile_domain = 'mobile/digimob.htm';
+		document.write(unescape("%3Cscript src='" + location.protocol + "//s3.amazonaws.com/me.static/js/me.redirect.min.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
 
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <style>
